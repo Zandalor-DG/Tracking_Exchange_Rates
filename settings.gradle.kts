@@ -21,4 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "Tracking_Exchange_Rates"
 include(":app")
- 
+include(":data")
+include(":domain")
+include(":build-src")
