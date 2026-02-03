@@ -1,4 +1,4 @@
-package com.example.to_do
+package com.paliy_dmitriy.tracking_exchange_rates
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
