@@ -1,37 +1,36 @@
 plugins {
-  alias(libs.plugins.android.library)
+  alias(libs.plugins.convention.android.library)
 }
 
 android {
-  namespace = "com.paliy_dmitriy.data"
-  compileSdk {
-    version = release(36)
-  }
-
-  defaultConfig {
-    minSdk = 24
-
-    testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    consumerProguardFiles("consumer-rules.pro")
-  }
-
   buildTypes {
-    release {
-      isMinifyEnabled = false
-      proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+    getByName("release") {
+      buildConfigField("String", "BASE_URL", AndroidConfig.PROD_BASE_URL)
     }
-  }
-  compileOptions {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
+
+    getByName("debug") {
+      buildConfigField("String", "BASE_URL", AndroidConfig.DEV_BASE_URL)
+    }
   }
 }
 
 dependencies {
-  implementation(libs.androidx.core.ktx)
-  implementation(libs.androidx.appcompat)
-  implementation(libs.material)
+  // Retrofit
+  api(libs.retrofit)
+  implementation(libs.retrofit.converter.kotlinx.serialization)
+
+  // OkHttp
+  implementation(platform(libs.okHttp.bom))
+  implementation(libs.okHttp)
+  implementation(libs.okHttp.loggingInterceptor)
+
+  // Room
+  api(libs.androidx.room.runtime)
+  ksp(libs.androidx.room.compiler)
+
+  // Security
+  implementation(libs.androidx.security.crypto)
+
+  // Tests
   testImplementation(libs.junit)
-  androidTestImplementation(libs.androidx.junit)
-  androidTestImplementation(libs.androidx.espresso.core)
 }

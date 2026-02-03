@@ -1,4 +1,7 @@
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 pluginManagement {
+  includeBuild("build-src")
   repositories {
     google {
       content {
@@ -9,6 +12,7 @@ pluginManagement {
     }
     mavenCentral()
     gradlePluginPortal()
+    maven { url = uri("https://jitpack.io") }
   }
 }
 dependencyResolutionManagement {
@@ -16,6 +20,7 @@ dependencyResolutionManagement {
   repositories {
     google()
     mavenCentral()
+    maven { url = uri("https://jitpack.io") }
   }
 }
 
@@ -23,4 +28,4 @@ rootProject.name = "Tracking_Exchange_Rates"
 include(":app")
 include(":data")
 include(":domain")
-include(":build-src")
+include(":core")
