@@ -4,10 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.NavOptions
 import androidx.navigation.compose.rememberNavController
@@ -69,7 +66,7 @@ class MainActivity : ComponentActivity() {
                   // Можно закрыть Activity или обработать иначе
                   // Например, показать диалог выхода
                   if (navController.currentBackStackEntry?.destination?.route
-                    == Destinations.Currencies.route
+                    == Destinations.Main.Currencies.route
                   ) {
                     // Мы на домашнем экране, может быть закрыть приложение?
                     // activity.finish() или показать диалог
@@ -97,9 +94,7 @@ class MainActivity : ComponentActivity() {
           }
         }
 
-        Scaffold(modifier = Modifier.Companion.fillMaxSize()) { innerPadding ->
-          RootNavigationGraph(navController, innerPadding)
-        }
+        RootNavigationGraph(navController)
       }
     }
 

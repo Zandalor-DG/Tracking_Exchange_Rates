@@ -10,44 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a67eb6a-d3ca-4ddc-9233-d1f1de431f2b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/navigation/NavigationCommand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/navigation/NavigationManagerImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/theme/fonts/InterFontFamily.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/inter_regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/kotlin/com/paliy_dmitriy/data/repository/QuotesRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/paliy_dmitriy/domain/model/quotes/QuotesModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/paliy_dmitriy/domain/repository/quotes/QuotesRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/paliy_dmitriy/domain/usecase/quotes/LoadQuotesUseCase.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/App.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/navigation/Destinations.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/navigation/Destinations.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/navigation/NavGraph.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/navigation/NavGraph.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/navigation/NavigationManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/navigation/NavigationManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/theme/Color.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/theme/Color.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/theme/Theme.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/theme/Theme.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/theme/Typography.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/theme/Typography.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/ui/feature/currencies/CurrenciesState.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/ui/feature/currencies/CurrenciesViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/ui/feature/currencies/CurrenciesViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/ui/main/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/ui/main/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-src/.gradle/9.1.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build-src/.gradle/9.1.0/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build-src/.gradle/9.1.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/build-src/.gradle/9.1.0/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build-src/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/build-src/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-src/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/build-src/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-src/src/main/kotlin/ModuleConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/build-src/src/main/kotlin/ModuleConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/paliy_dmitriy/core/di/CoroutinesModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/paliy_dmitriy/core/di/CoroutinesModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/paliy_dmitriy/core/network/ConnectionManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/paliy_dmitriy/core/network/ConnectionManager.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/src/main/kotlin/com/paliy_dmitriy/data/di/DataModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/kotlin/com/paliy_dmitriy/data/di/DataModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/kotlin/com/paliy_dmitriy/data/di/DatabaseModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/kotlin/com/paliy_dmitriy/data/di/DatabaseModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/kotlin/com/paliy_dmitriy/data/di/NetworkModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/kotlin/com/paliy_dmitriy/data/di/NetworkModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/kotlin/com/paliy_dmitriy/data/local/database/AppDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/kotlin/com/paliy_dmitriy/data/local/database/AppDatabase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/kotlin/com/paliy_dmitriy/data/local/datastore/PreferenceManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/kotlin/com/paliy_dmitriy/data/local/datastore/PreferenceManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/kotlin/com/paliy_dmitriy/data/remote/api/ApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/kotlin/com/paliy_dmitriy/data/remote/api/ApiService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/kotlin/com/paliy_dmitriy/data/remote/api/retrofit/RetrofitBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/kotlin/com/paliy_dmitriy/data/remote/api/retrofit/RetrofitBuilder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/kotlin/com/paliy_dmitriy/data/remote/model/ApiResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/kotlin/com/paliy_dmitriy/data/remote/model/ApiResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/paliy_dmitriy/domain/MyClass.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,20 +104,23 @@
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/dmitriy_paliy/work/Tracking_Exchange_Rates/app/src/main/res/font",
+    "last_opened_file_path": "/Users/dmitriy_paliy/work/Tracking_Exchange_Rates/domain/src/main/kotlin/com/paliy_dmitriy/domain/model",
     "recommended.upgrade.do.not.ask.for.project": "true",
     "settings.editor.selected.configurable": "AndroidSdkUpdater"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/domain/src/main/kotlin/com/paliy_dmitriy/domain/model" />
+      <recent name="$PROJECT_DIR$/domain/src/main/kotlin/com/paliy_dmitriy/domain/repository" />
       <recent name="$PROJECT_DIR$/app/src/main/res/font" />
       <recent name="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/presentation/theme" />
       <recent name="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates" />
-      <recent name="$PROJECT_DIR$/app/src/main/kotlin/com/paliy_dmitriy/tracking_exchange_rates/" />
-      <recent name="$PROJECT_DIR$/build-src/src/main/kotlin" />
     </key>
     <key name="K2MoveDeclarationsDialog.RECENT_PACKAGE_KEY">
+      <recent name="com.paliy_dmitriy.domain.usecase.quotes" />
+      <recent name="com.paliy_dmitriy.domain.repository.quotes" />
+      <recent name="com.paliy_dmitriy.domain.model.quotes" />
       <recent name="com.paliy_dmitriy.tracking_exchange_rates.presentation.theme.fonts" />
       <recent name="com.paliy_dmitriy.tracking_exchange_rates.presentation.ui.main" />
     </key>
@@ -255,6 +231,26 @@
         <entry key="com.example.to_do.debug.test">
           <value>
             <CheckInfo lastCheckTimestamp="1770100281676" />
+          </value>
+        </entry>
+        <entry key="com.paliy_dmitriy.tracking_exchange_rates">
+          <value>
+            <CheckInfo lastCheckTimestamp="1770119487003" />
+          </value>
+        </entry>
+        <entry key="com.paliy_dmitriy.tracking_exchange_rates.data.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1770119478724" />
+          </value>
+        </entry>
+        <entry key="com.paliy_dmitriy.tracking_exchange_rates.debug">
+          <value>
+            <CheckInfo lastCheckTimestamp="1770119487004" />
+          </value>
+        </entry>
+        <entry key="com.paliy_dmitriy.tracking_exchange_rates.debug.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1770119486993" />
           </value>
         </entry>
       </map>

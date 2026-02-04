@@ -5,9 +5,11 @@ sealed class Destinations(
   val objectName: String? = null,
   val objectPath: String? = null
 ) {
-  object Currencies : Destinations("currencies")
+  object Main : Destinations("main") {
+    object Currencies : Destinations("currencies")
+    object Favorites : Destinations("favorites")
+  }
   object Filters : Destinations("filters")
-  object Favorites : Destinations("favorites")
 
   // Dynamic destinations
 //  object Details : Destinations(

@@ -24,6 +24,17 @@ android {
 
   compileSdk = AndroidConfig.compileSdk
 
+  sourceSets {
+    named("main") {
+      res.srcDirs(
+        "src/main/res",
+        "src/main/res/features/currencies",
+        "src/main/res/features/favorites",
+        "src/main/res/features/filters",
+      )
+    }
+  }
+
   defaultConfig {
     applicationId = AndroidConfig.applicationId
     minSdk = AndroidConfig.minSdk

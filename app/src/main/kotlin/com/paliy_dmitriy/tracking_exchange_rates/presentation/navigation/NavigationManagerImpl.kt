@@ -4,8 +4,9 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraph
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
+import javax.inject.Inject
 
-class NavigationManagerImpl : NavigationManager {
+class NavigationManagerImpl @Inject constructor() : NavigationManager {
   private var navController: NavController? = null
   private val _navigationCommands = Channel<NavigationCommand>()
   val navigationCommands = _navigationCommands.receiveAsFlow()

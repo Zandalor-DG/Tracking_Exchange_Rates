@@ -33,4 +33,8 @@ dependencies {
 
   // Tests
   testImplementation(libs.junit)
+  androidTestImplementation(libs.androidx.compose.ui.test.junit4)
+
+  // Hilt
+  api(libs.hilt.navigation.compose)
 }
