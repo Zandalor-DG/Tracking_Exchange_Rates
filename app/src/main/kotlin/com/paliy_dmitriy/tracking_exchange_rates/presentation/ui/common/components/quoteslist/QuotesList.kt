@@ -27,9 +27,7 @@ fun QuotesList(
 
     LazyColumn {
       items(quotes, key = { it.id }) { quote ->
-        QuoteItem(
-          quote = quote,
-        )
+        QuoteItem(quote)
       }
     }
   }

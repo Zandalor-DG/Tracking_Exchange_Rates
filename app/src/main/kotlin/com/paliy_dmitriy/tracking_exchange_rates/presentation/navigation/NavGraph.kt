@@ -1,6 +1,7 @@
 package com.paliy_dmitriy.tracking_exchange_rates.presentation.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -12,10 +13,12 @@ import com.paliy_dmitriy.tracking_exchange_rates.presentation.ui.feature.favorit
 fun RootNavigationGraph(
   navController: NavHostController,
   startDestination: String = Destinations.Main.route,
+  modifier: Modifier
 ) {
   NavHost(
     navController = navController,
-    startDestination = startDestination
+    startDestination = startDestination,
+    modifier = modifier
   ) {
     navigation(
       route = Destinations.Main.route,

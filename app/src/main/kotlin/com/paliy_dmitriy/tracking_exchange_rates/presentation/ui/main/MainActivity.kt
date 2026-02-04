@@ -11,7 +11,6 @@ import androidx.navigation.compose.rememberNavController
 import com.paliy_dmitriy.tracking_exchange_rates.presentation.navigation.Destinations
 import com.paliy_dmitriy.tracking_exchange_rates.presentation.navigation.NavigationCommand
 import com.paliy_dmitriy.tracking_exchange_rates.presentation.navigation.NavigationManagerImpl
-import com.paliy_dmitriy.tracking_exchange_rates.presentation.navigation.RootNavigationGraph
 import com.paliy_dmitriy.tracking_exchange_rates.presentation.theme.TrackingExchangeRatesTheme
 import dagger.hilt.android.AndroidEntryPoint
 import jakarta.inject.Inject
@@ -94,7 +93,7 @@ class MainActivity : ComponentActivity() {
           }
         }
 
-        RootNavigationGraph(navController)
+        MainApp(navController)
       }
     }
 
