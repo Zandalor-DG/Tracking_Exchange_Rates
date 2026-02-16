@@ -12,6 +12,5 @@ internal class ProjectAccessors(project: Project) {
     val data get() = project.project(":data")
     val domain get() = project.project(":domain")
     val core get() = project.project(":core")
-    val app get() = project.project(":app")
   }
 }

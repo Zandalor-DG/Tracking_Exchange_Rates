@@ -1,15 +1,23 @@
 package com.paliy_dmitriy.tracking_exchange_rates.presentation.theme
 
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.paliy_dmitriy.tracking_exchange_rates.presentation.theme.fonts.InterFontFamily
+import com.paliy_dmitriy.tracking_exchange_rates.R
+
+val InterFontFamily = FontFamily(
+  Font(R.font.inter_medium, FontWeight.Medium),
+  Font(R.font.inter_semi_bold, FontWeight.SemiBold),
+  Font(R.font.inter_bold, FontWeight.Bold),
+)
 
 val Typography = Typography(
   bodySmall = TextStyle(
-    fontFamily = FontFamily.Default,
+    fontFamily = InterFontFamily,
     fontWeight = FontWeight.Medium,
     fontSize = 14.sp,
     lineHeight = 20.sp,

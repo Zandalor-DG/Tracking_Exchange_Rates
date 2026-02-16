@@ -8,5 +8,5 @@ java {
 }
 
 kotlin {
-  jvmToolchain(jdkVersion = LangOptions.jvmToolchain)
+  jvmToolchain(jdkVersion = LangOptions.JVM_TOOLCHAIN)
 }

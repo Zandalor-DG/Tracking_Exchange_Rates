@@ -1,3 +1,4 @@
 <resources>
   <string name="currencies_title">Currencies</string>
+  <string name="currencies_add_quote_to_favorites">Currencies</string>
 </resources>

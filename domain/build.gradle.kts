@@ -3,6 +3,9 @@ plugins {
 }
 
 dependencies {
+  // Core
+  api(projects.core)
+
   // Kotlin
   api(libs.kotlinx.coroutines.core)
 
