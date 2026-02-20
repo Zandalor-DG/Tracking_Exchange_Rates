@@ -2,8 +2,7 @@ package com.paliy_dmitriy.tracking_exchange_rates.presentation.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.ui.Modifier
-import androidx.navigation.NavHostController
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.navigation.NavOptions
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -11,15 +10,17 @@ import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import com.paliy_dmitriy.tracking_exchange_rates.presentation.ui.feature.currencies.CurrenciesScreen
 import com.paliy_dmitriy.tracking_exchange_rates.presentation.ui.feature.favorites.FavoritesScreen
+import com.paliy_dmitriy.tracking_exchange_rates.presentation.ui.feature.filters.FiltersScreen
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.launch
 
 @Composable
 fun RootNavigationGraph(
   startDestination: String = Destinations.Main.route,
   navigationManager: NavigationManager,
-  navController: NavHostController = rememberNavController()
+  coroutineScope: CoroutineScope = rememberCoroutineScope(),
 ) {
-//  val navigationManager = LocalNavigationManager.current
-//  val navController = rememberNavController()
+  val navController = rememberNavController()
 
   LaunchedEffect(Unit) {
     navigationManager.setNavController(navController)
@@ -102,8 +103,14 @@ fun RootNavigationGraph(
       }
     }
 
-//    composable(Destinations.Filters.route) { backStackEntry ->
-//      FiltersScreen(navigationManager = navigationManager)
-//    }
+    composable(Destinations.Filters.route) { backStackEntry ->
+      FiltersScreen(
+        onNavigateBack = {
+          coroutineScope.launch {
+            navigationManager.navigateUp()
+          }
+        }
+      )
+    }
   }
 }

@@ -10,16 +10,12 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
-import com.paliy_dmitriy.tracking_exchange_rates.R
-import com.paliy_dmitriy.tracking_exchange_rates.presentation.theme.InterFontFamily
 
 @Composable
 fun Header(
   title: String = "",
+  subElement: @Composable (() -> Unit)? = null
 ) {
   Column(
     Modifier
@@ -28,7 +24,7 @@ fun Header(
       .statusBarsPadding()
   ) {
     Text(
-      text = stringResource(R.string.currencies_title),
+      text = title,
       style = MaterialTheme.typography.titleLarge,
       color = MaterialTheme.colorScheme.onBackground,
       modifier = Modifier.padding(
@@ -38,6 +34,8 @@ fun Header(
         bottom = 12.dp
       )
     )
+
+    subElement?.invoke()
 
     HorizontalDivider(
       color = MaterialTheme.colorScheme.outline,

@@ -18,8 +18,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
+import com.paliy_dmitriy.tracking_exchange_rates.R
 import com.paliy_dmitriy.tracking_exchange_rates.presentation.ui.common.components.bottom_navigation_bar.BottomNavigationBar
+import com.paliy_dmitriy.tracking_exchange_rates.presentation.ui.common.components.filters.Filters
 import com.paliy_dmitriy.tracking_exchange_rates.presentation.ui.common.components.header.Header
 import com.paliy_dmitriy.tracking_exchange_rates.presentation.ui.common.components.quotes_list.EmptyState
 import com.paliy_dmitriy.tracking_exchange_rates.presentation.ui.common.components.quotes_list.QuotesList
@@ -31,6 +34,7 @@ fun CurrenciesScreen(
 ) {
   val isLoading = viewModel.isLoading.collectAsState()
   val quotes = viewModel.quotes.collectAsState()
+  val symbols = viewModel.symbols.collectAsState()
   val error = viewModel.error.collectAsState()
 
   val snackbarHostState = remember { SnackbarHostState() }
@@ -51,7 +55,12 @@ fun CurrenciesScreen(
   Scaffold(
     snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
     topBar = {
-      Header()
+      Header(
+        title = stringResource(R.string.currencies_title),
+        subElement = {
+          Filters(baseCurrency = quotes.value.base, symbols = symbols.value.symbols )
+        }
+      )
     },
     contentColor = MaterialTheme.colorScheme.onBackground,
     bottomBar = { BottomNavigationBar() }
@@ -75,8 +84,6 @@ fun CurrenciesScreen(
           quotes.value.quoteList.isNotEmpty() -> {
             QuotesList(
               quotes = quotes.value.quoteList,
-//              onRefresh = viewModel::onRefresh,
-//              onRefresh = () -> { },
               modifier = Modifier.fillMaxSize()
             )
           }

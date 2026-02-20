@@ -1,10 +1,8 @@
-package com.paliy_dmitriy.data.local.data_base.entity
+package com.paliy_dmitriy.data.local.database.entity
 
 import androidx.room.ColumnInfo
-import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import androidx.room.Relation
 
 @Entity(tableName = "favorites")
 data class FavoriteEntity(

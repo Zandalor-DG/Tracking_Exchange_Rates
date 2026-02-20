@@ -1,5 +1,6 @@
 package com.paliy_dmitriy.data.remote.model.response
 
+import com.paliy_dmitriy.data.remote.model.ApiResponse
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
@@ -18,8 +19,8 @@ data class QuoteResponseDto(
   val rates: Map<String, Double>,
 
   @SerialName("success")
-  val success: Boolean,
+  override val success: Boolean,
 
   @SerialName("timestamp")
   val timestamp: Long
-)
+): ApiResponse

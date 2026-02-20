@@ -1,4 +1,4 @@
-package com.paliy_dmitriy.data.local.data_base.entity
+package com.paliy_dmitriy.data.local.database.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
